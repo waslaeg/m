@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>خدماتي</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo-box">
+        <img src="logo.png" alt="لوجو" class="logo-img" />
+        <span class="logo-text"> مؤمن نصار</span>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+      
+        
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services-section">
+  <h2 class="animate delay-1">خدماتي</h2>
+  <div class="services-container">
+    
+    <div class="service-box animate delay-2">
+      <h3>اكونت مانجر وميديا باير</h3>
+      <p> بخبرة تزيد عن 6 سنوات في إدارة الحملات الإعلانية </p>
+      <a href="med.html" class="btn">الخبرات العملية والمهارات </a>
+    </div>
+
+    <div class="service-box big-box animate delay-3">
+      <h3>الأعمال السابقة</h3>
+      <div class="sub-services">
+        <div class="sub-service-box animate delay-4">
+          <h4> الحملات الإعلانية</h4>
+          <a href="ads1.html" class="btn small-btn">عرض</a>
+        </div>
+        <div class="sub-service-box animate delay-4">
+          <h4>اراء العملاء</h4>
+          <a href="test.html" class="btn small-btn">عرض</a>
+        </div>
+     
+
+  </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://wa.me/201025752676" target="_blank" class="btn">تواصل على واتساب</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/share/167MFZUu6C/?mibextid=wwXIfr">فيسبوك</a> | 
+      <a href="https://wa.me/201025752676">وتس اب</a> | 
+      
+    </div>
+    <p>© 2025 مؤمن نصار. كل الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.animate').forEach(el => {
+      el.style.opacity = "1";
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="مؤمن نصار - خبير ميديا باينج يقدم حلول رقمية مبتكرة تشمل البرمجة، الإعلانات، التصميم، وكتابة المحتوى.">
+<meta name="author" content="مؤمن نصار">
+<meta name="keywords" content="مؤمن نصار مبرمج وميديا باير, مؤمن نصار ميديا باير, مؤمن نصار ادارة حملات اعلانيه, مؤمن نصار تسويق رقمي, مؤمن نصار">
+<meta property="og:title" content="بورتفوليو مؤمن نصار -  ميديا باير">
+<meta property="og:description" content="تعرف على خدماتي في إدارة الإعلانات بجودة عالية ونتائج فعلية.">
+<meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://waslaeg.github.io/m/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="مؤمن نصار">
+<!-- Favicon -->
+<link rel="icon" href="favicon.png" type="image/x-icon">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://waslaeg.github.io/m/">
+  <title>مؤمن نصار</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="welcomeMessage()">
+
+  <header>
+    <nav>
+      <div class="logo-box">
+        <img src="logo.png" alt="لوجو" class="logo-img" />
+        <span class="logo-text">مؤمن نصار</span>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="services.html">الخدمات</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1> أهلاً بيك، انا مؤمن</h1>
+
+      <h2>  اكونت مانجر وميديا باير </h2>
+     <p> بدير الحملات وبصمم خطط اعلانية كامله بخبرة متعددة المجالات</p>
+ <a href="services.html" class="btn">شوف خدماتي</a>
+      <a href="https://wa.me/201025752676" target="_blank" class="btn">تواصل على واتساب</a>
+    </div>
+  </section>
+</main>
+  <footer>
+    <div class="social">
+      <a href="https://www.facebook.com/share/167MFZUu6C/?mibextid=wwXIfr">فيسبوك</a> | 
+      <a href="https://wa.me/201025752676">وتس اب</a> 
+    </div>
+    <p>© 2025 مؤمن نصار. كل الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    function welcomeMessage() {
+      alert("أهلاً بيك في موقعي! شوف خدماتي وراسلني لو مهتم بأي حاجة.");
+    }
+  </script>
+<script>
+  window.onload = function () {
+    document.getElementById("welcome-popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("welcome-popup").style.display = "none";
+  }
+</script>
+<div id="welcome-popup" class="popup">
+  <div class="popup-content">
+    <h2>أهلًا بيك في موقعي!</h2>
+    <p>أنا مؤمن، اكونت مانجر وميديا باير . استمتع بتصفح خدماتي واطلب اللي يناسبك!</p>
+    <button onclick="closePopup()">يلا نشوف</button>
+  </div>
+</div>
+</body>
+</html>

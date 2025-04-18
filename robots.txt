@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alaayser.github.io/1/sitemap.xml
